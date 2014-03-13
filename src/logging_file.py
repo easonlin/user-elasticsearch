@@ -21,10 +21,8 @@ def set_trace_id(logger, trace_id):
         logger.extra['trace_id'] = trace_id
     else:
         logger.extra  = {'trace_id': trace_id}
-SYS_APPENGINE_CONFIG_FILE = 'config.ini'
+SYS_APPENGINE_CONFIG_FILE = 'config_file.ini'
 config_file = SYS_APPENGINE_CONFIG_FILE
 load_logger(config_file)
 logger = logging.getLogger(__name__)
-logger.info('{"vid"="eason_test01"}')
-logger.info('{"vid"="eason_test02"}\n')
-logger.info('@cee: {"vid"="eason_test03"}\n')
+logger.info('config_file eason_test_01')
