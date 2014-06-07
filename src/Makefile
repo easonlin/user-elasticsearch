@@ -5,3 +5,5 @@ file:
 	python logging_file.py
 sys:
 	python logging_sys.py
+nginx:
+	cat td-agent.conf.nginx
