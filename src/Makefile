@@ -7,3 +7,6 @@ sys:
 	python logging_sys.py
 nginx:
 	cat td-agent.conf.nginx
+# Parse log
+apache:
+	python lex_apache.py < apache.log
